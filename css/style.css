@@ -78,8 +78,8 @@ img.logos.mongo {
 }
 
 .vi {
-  width: 300px;
-  height: 300px;
+  width: 270px;
+  height: 270px;
 }
 
 .vi-edu {
@@ -115,9 +115,18 @@ img.logos.mongo {
 body {
   background-color: #121212;
   color: #eeeeee;
-  font-family: "Arial", sans-serif;
   font-size: 16px;
   border-radius: 10px;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Arial", Helvetica, sans-serif;
 }
 
 a {
@@ -127,12 +136,6 @@ a {
 
 li {
   list-style-type: none;
-}
-
-header {
-  -webkit-box-shadow: 5px 5px 15px #3d3c3c;
-  box-shadow: 5px 5px 15px #3d3c3c;
-  border-radius: 10px;
 }
 
 .header {
@@ -183,6 +186,10 @@ header {
 .main {
   background-color: #eeeeee;
   height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../images/programming.jpg");
+  background-position: center;
+  background-size: cover;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -208,7 +215,7 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #121212;
+  color: aliceblue;
 }
 
 .main-content h1 {
@@ -278,7 +285,7 @@ header {
 
 .exp-article div,
 .edu-article div {
-  line-height: 1.5;
+  line-height: 2;
 }
 
 .skills {
@@ -416,7 +423,9 @@ footer .footer-div ul {
     width: 150px;
     height: 150px;
   }
-
+  .main {
+    height: 70vh;
+  }
   .main-content {
     display: flex;
     flex-direction: column;
@@ -478,6 +487,8 @@ footer .footer-div ul {
   .exp-article h1,
   .edu-article h1 {
     font-size: 1.2em;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .exp-article h4,
@@ -488,6 +499,38 @@ footer .footer-div ul {
   .exp-article p,
   .edu-article p {
     font-size: 0.8em;
+  }
+
+  .skills .upper-div {
+    padding: 10px;
+    height: inherit;
+    width: 100%;
+
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin: 5px;
+  }
+
+  img.logos {
+    width: 2em;
+    height: 2em;
+    margin-bottom: 5px;
+  }
+
+  img.logos.mongo {
+    width: 4em;
+    height: 3em;
+  }
+
+  div.card > p {
+    font-size: 12px;
   }
 
   footer .footer-div ul {
