@@ -126,7 +126,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Arial", Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 a {
@@ -184,8 +185,8 @@ li {
 }
 
 .main {
-  background-color: #eeeeee;
-  height: 80vh;
+  /* background-color: #eeeeee; */
+  height: 70vh;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../images/programming.jpg");
   background-position: center;
@@ -313,6 +314,96 @@ li {
   border: 2px solid red;
 }
 
+.h2-project {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.card-project-upper {
+  width: 250px;
+  height: 200px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  /* margin: 20px 20px 0; */
+  background-color: #eeeeee;
+  color: #121212;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /* -webkit-box-shadow: inset 4px 4px 11px grey, inset -4px -4px 10px grey;
+  box-shadow: inset 4px 4px 11px grey, inset -4px -4px 10px grey; */
+}
+
+.card-project-upper > img {
+  height: 150px;
+  width: 150px;
+}
+
+.card-project-lower {
+  width: 250px;
+  height: 100px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  /* margin: 0 20px 20px; */
+  background-color: #fed136;
+  color: #121212;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  /* -webkit-box-shadow: inset 4px 4px 11px grey, inset -4px -4px 10px grey;
+  box-shadow: inset 4px 4px 11px grey, inset -4px -4px 10px grey; */
+}
+
+.card-project-lower > h3 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.project-div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.holder-div {
+  margin: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.holder-div:hover {
+  transform: scale(1.2);
+}
+
+.link-project {
+  font-family: monospace;
+  color: #121212;
+  font-size: 12px;
+}
+
 footer {
   background-color: rgba(61, 60, 60, 0.3);
   color: #eeeeee;
@@ -418,7 +509,11 @@ footer .footer-div ul {
   }
 }
 
-@media (max-width: 470px) {
+@media (max-width: 440px) {
+  .container {
+    width: 100%;
+    margin: 10px auto;
+  }
   img.profile {
     width: 150px;
     height: 150px;
@@ -462,7 +557,7 @@ footer .footer-div ul {
     display: flex;
     /* flex-direction: column; */
     margin: 20px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
 
@@ -536,6 +631,48 @@ footer .footer-div ul {
   footer .footer-div ul {
     width: 40%;
     justify-content: space-between;
+  }
+  .project-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .card-project-upper {
+    width: 220px;
+    height: 200px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    /* margin: 20px 20px 0; */
+    background-color: #eeeeee;
+    color: #121212;
+    font-weight: bold;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    /* -webkit-box-shadow: inset 4px 4px 11px grey, inset -4px -4px 10px grey;
+    box-shadow: inset 4px 4px 11px grey, inset -4px -4px 10px grey; */
+  }
+
+  .card-project-upper > img {
+    height: 130px;
+    width: 130px;
+  }
+
+  .card-project-lower {
+    width: 220px;
+    height: 100px;
   }
 }
 /*# sourceMappingURL=style.css.map */
