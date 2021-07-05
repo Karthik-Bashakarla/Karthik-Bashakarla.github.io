@@ -372,6 +372,7 @@ li {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  text-align: center;
 
   /* -webkit-box-shadow: inset 4px 4px 11px grey, inset -4px -4px 10px grey;
   box-shadow: inset 4px 4px 11px grey, inset -4px -4px 10px grey; */
@@ -380,6 +381,7 @@ li {
 .card-project-lower > h3 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: calc(0.8 * 250px);
 }
 
 .project-div {
@@ -509,7 +511,11 @@ footer .footer-div ul {
   }
 }
 
-@media (max-width: 440px) {
+@media screen and (min-width: 320px) and (max-width: 440px) {
+  body {
+    width: 100vw;
+  }
+
   .container {
     width: 100%;
     margin: 10px auto;
