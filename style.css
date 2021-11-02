@@ -246,8 +246,9 @@ li {
 
 .main-content p {
   font-size: 25px;
-  -webkit-animation: test-2 2.5s ease-out 0.5s 1 both;
-  animation: test-2 2.5s ease-out 0.5s 1 both;
+  overflow: hidden;
+  -webkit-animation: test-1 2.5s ease-out 0.5s 1 both;
+  animation: test-1 2.5s ease-out 0.5s 1 both;
 }
 
 .main-content img {
@@ -372,6 +373,7 @@ li {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  text-align: center;
 
   /* -webkit-box-shadow: inset 4px 4px 11px grey, inset -4px -4px 10px grey;
   box-shadow: inset 4px 4px 11px grey, inset -4px -4px 10px grey; */
@@ -380,6 +382,7 @@ li {
 .card-project-lower > h3 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: calc(0.8 * 250px);
 }
 
 .project-div {
@@ -509,7 +512,12 @@ footer .footer-div ul {
   }
 }
 
-@media (max-width: 440px) {
+@media screen and (min-width: 320px) and (max-width: 440px) {
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
   .container {
     width: 100%;
     margin: 10px auto;
@@ -556,7 +564,7 @@ footer .footer-div ul {
     padding: 2em 0;
     display: flex;
     /* flex-direction: column; */
-    margin: 20px;
+    margin: 20px 0;
     justify-content: center;
     align-items: center;
   }
